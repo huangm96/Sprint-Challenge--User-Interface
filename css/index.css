@@ -71,12 +71,23 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+@keyframes headerColor{
+    12% {background-color:red;}
+    24% {background-color:orange;}
+    36% {background-color:yellow;}
+    48% {background-color:green;}
+    60% {background-color:cyan;}
+    72% {background-color:blue;}
+    84% {background-color:purple;}
+    
+}
 header{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     margin: 20px 0;
+    animation-name: headerColor;
+    animation-duration:8s;
 }
 
 header nav{
