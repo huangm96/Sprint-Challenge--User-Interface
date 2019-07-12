@@ -86,8 +86,10 @@ header{
     flex-direction: row;
     justify-content:space-between;
     margin: 20px 0;
+    padding:10px 0;
     animation-name: headerColor;
     animation-duration:8s;
+    
 }
 
 header nav{
