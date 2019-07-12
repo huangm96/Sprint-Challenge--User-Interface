@@ -66,9 +66,47 @@ p {
     line-height: 1.4;
 }
 
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+@keyframes headerColor{
+    12% {background-color:red;}
+    24% {background-color:orange;}
+    36% {background-color:yellow;}
+    48% {background-color:green;}
+    60% {background-color:cyan;}
+    72% {background-color:blue;}
+    84% {background-color:purple;}
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0 0 20px 0;
+    padding:10px 0;
+    animation-name: headerColor;
+    animation-duration:8s;
+    
+}
+
+header nav{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-top-img{
+    margin: 20px 0;
 }
 
 .top-content {
@@ -112,6 +150,37 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box1 {
+    background: teal;
+}
+.middle-content .boxes .box2 {
+    background: gold;
+}
+.middle-content .boxes .box3 {
+    background: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background: coral;
+}
+.middle-content .boxes .box5 {
+    background: crimson;
+}
+.middle-content .boxes .box6 {
+    background: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background: darkorchid;
+}
+.middle-content .boxes .box8 {
+    background: hotpink;
+}
+.middle-content .boxes .box9 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +212,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About page */
+
+.about-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-middle-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-middle-content img{
+    width: 100%;
+    height:auto;
+}
+.about-middle-content-items{
+    width: 45%;
+    margin: 0 0 10px 0;
+    padding:20px 0;
+    border-bottom: 1px dotted black;
+    
+    
+}
+.about-middle-content-items-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:10px 0 0 0;
+}
+.about-learn-more{
+    margin:10px auto auto 0;
+    padding: 5px 5%; 
+    border: 1px solid black;
+    border-radius:5px;
+    text-decoration:none; 
+    color:black;
+}
+
+.about-bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 20px 20px 20px;
+    
 }
